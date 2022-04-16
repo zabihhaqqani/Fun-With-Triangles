@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;1,300;1,400&family=Montserrat&family=Plus+Jakarta+Sans:wght@500;600&family=Poppins:wght@400;500;600;700;800&family=Readex+Pro&family=Roboto&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans',
+        sans-serif;
+    font-size: large;
+    color: white;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.891);
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 1rem;
+    line-height: 40px;
+}
+
+h2 {
+    padding: 0.5rem;
+    text-align: center;
+    border: 5px solid #4c1d95;
+}
+
+input {
+    border: none;
+    width: 30%;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    color: #000;
+}
+
+label {
+    margin: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+button {
+    background-color: #4c1d95;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 22px;
+    width: 30%;
+    border: none;
+}
+
+.footer {
+    background-color: #4c1d95;
+    display: flex;
+    text-align: center;
+    color: black;
+    justify-content: center;
+    line-height: 30px;
+    padding: 1rem;
+}
+
+.footer .link {
+    color: #fff;
+}
+
+.social-icons a {
+    padding: 0.5rem;
+}
+
+.pagewrap {
+    display: flex;
+
+    /*vertically stack children*/
+    flex-direction: column;
+
+    /* expand to take full height of page */
+    /* min-height overrides both height & max-height */
+    min-height: 100vh;
+
+}
+
+main {
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #4c1d95;
+    line-height: 40px;
+}
+
+nav a {
+    padding: 0.5rem;
+    text-decoration: none;
+}
+p{
+    padding: 0.5rem;
+    text-align: center;
+}
+.quiz-container{
+    /* border: 3px solid white; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+@media (max-width: 960px) {
+
+    input,
+    button {
+        width: 70%;
+    }
+}

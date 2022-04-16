@@ -7,32 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/ee333b3420.js" crossorigin="anonymous"></script>
-    <title>Fun with Triangles</title>
+    <link rel="stylesheet" href="hypo.css">
+
+    <title>Document</title>
 </head>
 
 <body>
     <div class="pagewrap">
         <nav>
-            <a style="text-decoration: underline;" href="./index.html">Is Triangle?</a>
+            <a href="./index.html">Is Triangle?</a>
             <a href="./hypo.html">Hypotenuse</a>
-            <a href="./area.html">Area</a>
+            <a style="text-decoration: underline;" href="./area.html">Area</a>
             <a href="./quiz.html">Quiz</a>
         </nav>
-        <h1>Does it form a triangle ?</h1>
-        
+        <h1>Calculate area</h1>
         <main>
             <div class="container">
+                <h2>Area of a triangle = 1/2(Base * Height)</h2>
+                <label>Base:<input class="input" type="number"></label>
+                <label>Height:<input class="input" type="number"></label>
 
-                <label for="angle">Angle-1(in degrees)</label>
-                <input class="angle" type="number">
-                <label for="angle">Angle-2(in degrees)</label>
-                <input class="angle" type="number">
-                <label for="angle">Angle-3(in degrees)</label>
-                <input class="angle" type="number">
-                <button class="triangle-check">Is it a Triangle?</button>
-                <div class="output-msg"></div>
+                <button id="calculate-area">Calculate area of triangle</button>
+                <div id="output-msg"></div>
             </div>
         </main>
+
         <footer id="foot" class="footer">
             <div class="social-icons">
 
@@ -46,7 +45,7 @@
             </div>
         </footer>
     </div>
-    <script src="./app.js"></script>
+    <script src="./area.js"></script>
 </body>
 
 </html>
