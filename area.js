@@ -10,7 +10,7 @@ function calculateAreaOfTriangle() {
 
     let area = (base * height)/2
 
-    outputMsg.innerText = `the hypotenuse is ${area} cm²`
+    outputMsg.innerText = `the area is ${area} cm²`
 
 }
 
