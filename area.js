@@ -10,7 +10,12 @@ function calculateAreaOfTriangle() {
 
     let area = (base * height)/2
 
+    if(Number(inputs[0].value)<1||Number(inputs[1].value)<1){
+        outputMsg.innerText = "please don't enter any negative values!!!!"
+    }else{
     outputMsg.innerText = `the area is ${area} cm²`
+
+    }
 
 }
 

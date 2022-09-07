@@ -9,8 +9,11 @@ function calculateSumOfAllAngles() {
     if (sum === 180){
         message.innerText = "Yup it forms a triangle"
 
+    }else if(Number(angles[0].value)<1||Number(angles[1].value)<1||Number(angles[2].value)<1){
+        message.innerText = "please don't enter any negative values!!!!"
     }else{
         message.innerText = "Nope it does not form a triangle"
+
     }
 }
 

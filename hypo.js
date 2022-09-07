@@ -10,7 +10,12 @@ function calculateHypotenuse() {
     let sum = a * a + b * b
     let hypotenuse = Math.sqrt(sum)
 
+ if(Number(inputs[0].value)<1||Number(inputs[1].value)<1){
+        message.innerText = "please don't enter any negative values!!!!"
+    }else{
     message.innerText = `The hypotenuse is ${hypotenuse} cm`
+    }
+
 
 }
 
